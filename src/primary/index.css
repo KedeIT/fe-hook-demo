@@ -1,0 +1,23 @@
+.OldDrunkery-container {
+    display: flex;
+    flex-direction: column;
+    border-color: cyan;
+    border-width: 1rem;
+    width: 100%;
+    height: 5em;
+    margin: 0,10px;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+}
+
+.HookldDrunkery1-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 5em;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: cyan;
+}
