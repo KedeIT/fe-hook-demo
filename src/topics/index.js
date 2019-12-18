@@ -48,16 +48,12 @@ function TopicPage(props) {
         });
     }
     const handleDeleteClick = index => {
-        console.log('index---->', index);
-        
         dispatch({
             type: 'delete',
             payload: index
         });
     }
     const handleResetHotClick = index => {
-        console.log('reset--->', index);
-        
         dispatch({
             type: 'resetHot',
             payload: index

@@ -11,19 +11,6 @@ function ThemeSwitch(props) {
         setSelectedIndex(index);
     }, [props, themes]);
 
-    // const themeButton = useMemo((title) => {
-    //     return (
-    //         <button
-    //             className={cx(
-    //                 'border button',
-    //                 props.isSelected && 'selected-border selected-button'
-    //             )}
-    //             onClick={props.onClick.bind(this, title)}
-    //         >
-    //             {title}
-    //         </button>
-    //     );
-    // }, [props.onClick]);
 
     return (
         <div style={{marginTop: '5px'}}>

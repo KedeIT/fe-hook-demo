@@ -1,12 +1,7 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import Topic from './Topic';
 
 function TopicList(props) {
-    useEffect(() => {
-        console.log('toplist');
-        
-    });
-
     return (
         <div className="topic-list">
             {

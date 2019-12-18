@@ -9,7 +9,6 @@ import {
 } from 'react-router-dom';
 
 import Home from './home';
-import HookPrimaryExample from './primary';
 import CatachFish from './catachfish';
 import TopicPage from './topics';
 import NewsList from './fetch-data';
@@ -63,9 +62,6 @@ function App() {
         </nav>  
 
         <Switch>
-          <Route path="/primary">
-            <HookPrimaryExample />
-          </Route>
           <Route path="/contrast">
             <ContrastScreen />
           </Route>

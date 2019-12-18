@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function HookClockRecorder () {
     
     const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        document.title = `Hook打卡${count}人`;
+    })
 
     const clockIn = () => {
         setCount(count => (count+1));
