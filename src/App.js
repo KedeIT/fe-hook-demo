@@ -66,7 +66,7 @@ function App() {
           <Route path="/primary">
             <HookPrimaryExample />
           </Route>
-          <Route>
+          <Route path="/contrast">
             <ContrastScreen />
           </Route>
           <Route path="/newslist">

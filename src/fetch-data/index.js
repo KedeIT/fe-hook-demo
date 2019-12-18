@@ -10,7 +10,7 @@ function NewsList(props) {
         
         async function fetchData() {
             const result = await axios(
-                'http://hn.algolia.com/api/v1/search?query=redux',
+                'api/v1/search?query=redux',
             ); 
 
             setData(result.data);
