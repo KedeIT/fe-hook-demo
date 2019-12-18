@@ -13,16 +13,19 @@ import HookPrimaryExample from './primary';
 import CatachFish from './catachfish';
 import TopicPage from './topics';
 import NewsList from './fetch-data';
+import ContrastScreen from './contrast';
 
 function App() {
   const buttons = [
     '介绍',
+    '实现对照',
     '基础使用',
     '请求数据',
     '标签列表'
   ];
   const routes = [
     '/',
+    '/contrast',
     '/catachfish',
     '/newsList',
     '/topics'
@@ -62,6 +65,9 @@ function App() {
         <Switch>
           <Route path="/primary">
             <HookPrimaryExample />
+          </Route>
+          <Route>
+            <ContrastScreen />
           </Route>
           <Route path="/newslist">
             <NewsList />
