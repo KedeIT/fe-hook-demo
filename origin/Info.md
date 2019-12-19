@@ -19,39 +19,33 @@
 1. Hook是React未来力推的一个特性，它可以解决了目前React框架存在一些问题，并且提供了一个新的笔记好思路来使用React。
 2. 另外class跟hook是共存的，并且hook是向后兼容的，不影响之前写的代码。官方也特别推荐使用Hook。最最主要的是用Hook真的是省力省心。
 3. 目前我们常用的第三方库大多已支持Hook。
-大家了解过后可以尝试着用起来。  
+大家了解过后可以用起来。  
 
 ## api  
 
-### useState
-声明状态变量。 
-1. 需要传入一个初始state，可以是任意的js有效类型。
-2. 返回当前state和修改当前state的函数。 
-3. 和class组件中`this.setState`是同样的作用。不同的是class组件中的setState是合并，而Hook是替换。   
+## useState
+声明状态变量，需要传入一个初始state，可以是任意的js有效类型，返回当前state和修改当前state的函数。 和class组件中`this.setState`是同样的作用。不同的是class组件中的setState是合并，而Hook是替换。   
 
-### useEffect 
+## useEffect 
 在React里面我们一般把请求数据、订阅和更改DOM称之为副作用。  
 1. useEffect api可以让你在函数组件中执行副作用。告诉React组件需要在渲染完成之后调用对应操作。
 2. useEffect接收两个参数，第一个参数是要执行函数，第二个参数是可选的，关联变量，可以控制effect的执行时机
 3. 在useEffect内部可以直接使用props和stateeffect会在第一次渲染和每次更新之后都会调用。这里可以通过设置关联变量来控制effect的执行。
 4. effect可选的清除机制是通过返回一个函数来执行，像取消订阅这些，这个待会也会在代码中去演示。
 
-### useContext  
+## useContext  
 接收一个context对象，并返回一个context对象的值
 
-### useReducer  
+## useReducer  
 useState的替代方案，当state结构复杂的时候，采用Redux方式来处理
 
-### useCallback
+## useCallback
 返回一个关联函数的memoized函数
-### useMemo
+## useMemo
 返回一个memoized值
 这两个都是用来减少不必要的渲染 
-### useRef
+## useRef
 返回一个可变的ref值，可以保存任何类型的对象
-
-每个组件都有一个 “内存单元” 的内部列表。它们只是 JavaScript 对象，我们可以在其中放置一些数据。当调用 useState() 这样的Hook 时，它读取当前单元格(或在第一次呈现时初始化它)，然后将指针移动到下一个单元格。这就是多个 useState() 调用各自获取独立本地状态的方式。
-
 
 
  
